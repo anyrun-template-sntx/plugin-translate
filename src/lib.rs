@@ -1,7 +1,8 @@
 use std::fs;
 
 use abi_stable::std_types::{ROption, RString, RVec};
-use anyrun_plugin::*;
+use anyrun_interface::{PluginInfo, Match, HandleResult};
+use anyrun_macros::{init, info, get_matches, handler};
 use fuzzy_matcher::FuzzyMatcher;
 use reqwest::Client;
 use serde::Deserialize;
